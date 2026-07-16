@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 ondblclick="A()" id="h">welcome</h1>
+    <h2 onmouseenter="B()" onmouseleave="C()" id="a">Hello</h2>
+    <script>
+         function A(){
+           document.getElementById("h").style.color='red';
+         }
+
+         function B(){
+           document.getElementById("a").style.textAlign='center';
+         }
+
+         function C(){
+             document.getElementById("a").style.backgroundColor='brown';
+         }
+    </script>
+</body>
+</html>
