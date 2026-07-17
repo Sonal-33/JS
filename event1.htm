@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" placeholder="Enter Name" id="name" onchange="a()">  -->
+
+    <form onsubmit="handle(event)">
+        <div>
+            <label for="name">Enter Name:</label>
+            <input type="text" placeholder="Enter Name" id="name" name="name">
+        </div>
+        <div>
+            <button type="submit">ok</button>
+        </div>
+    </form>
+
+    <script>
+        function a() {
+            let b = document.getElementById('name').value;
+
+            console.log(b);
+        }
+
+        function handle(event) {
+            event.preventDefault();
+            console.log(event.target[0].value);
+            let name = document.getElementById('name').value;
+            if (name == "") {
+                alert("please enter name");
+            }
+        }
+    </script>
+</body>
+
+</html>
