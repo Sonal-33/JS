@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //non-parameterized & non-return type function
+        function demo(){
+            document.write("function calling","<br>");
+        }
+        demo();
+
+        //parameterized & non-return type function
+        function print(name){
+            document.write(name,"<br>");
+        }
+
+        print("mayur"); //calling the fun
+
+
+        //non-parameterized & return type function
+        function getContact(){
+           return 9876765456;
+        }
+
+       let x= getContact();
+       document.write(x,"<br>");
+
+       document.write(getContact());
+    </script>
+</body>
+</html>
